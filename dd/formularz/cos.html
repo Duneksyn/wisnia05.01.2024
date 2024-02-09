@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function pobierz(){
+            var napis="\n";
+            var braki=false;
+            if(form1.imie.value=="")
+                {
+                napis+="imie\n";braki=true;
+                }
+            if(form1.nazw.value=="")
+                {
+                napis+="nazwisko\n";braki=true;
+                }
+            if(form1.data.value=="")
+                {
+                napis+="data urodzenia";braki=true;
+                }
+            if(braki==false)
+            alert("wprowadziłes wszystkie dane poprawnie");
+        else
+        alert("brakuje następujących danych:\n"+napis);
+    dni=document.getElementById("dni").value;
+    dor=document.getElementById("dor").value;
+    dz=document.getElementById("dz").value;
+
+        
+    document.getElementById("a").innerHTML="dokonałeś rezerwacji na:"+dni+"dni<br>dla "+dor+" dorosłych i "+dz+" dzieci.<br>";
+    }
+    </script>
+</head>
+<body>
+    <form name="form1">
+        <table>
+            <tr>
+                <td>Podaj liczbe dni:</td><td><input type="number" name="imie" id="dni"></td>
+            </tr>
+            <tr>
+                <td>dorosłych:</td><td><input type="number" name="nazw" id="dor"></td>
+            </tr>
+            <tr>
+                <td>dzieci:</td><td><input type="number"name="data" maxlength="4" size="4" id="dz"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="right"><input type="button" name="p1" value="Wyślij" onclick="pobierz()"></td>
+            </tr>
+            <tr></tr>
+        </table>
+        <div id="a">
+            
+        </div>
+    </form>
+</body>
+</html>
