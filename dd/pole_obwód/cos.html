@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function logowanie(formularz){
+           let a=document.getElementById("a").value
+           let b=document.getElementById("b").value
+           parseInt(a);
+           parseInt(b);
+           
+           let wynik=a*b;
+           let wynik1=(a*2)+(b*2);
+           parseInt(wynik);
+           document.write("pole prostokąta:"+wynik)
+           document.write("obwód prostokąta:"+wynik1)
+        }
+        
+    </script>
+    <form name="form">
+        Podaj bok a: <input type="number" name="a" id="a"><br><br>
+        Podaj bok b: <input type="number" name="b" id="b"><br><br>
+        <input type="button" value="oblicz" onclick="logowanie(this.form)">
+        inpu
+    </form>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function oblicz(){
+         
+    a=document.getElementById("bok").value;
+    pole=a*a*6;
+    document.getElementById("h").innerHTML="pole:"+pole;
+        }
+    
+    function oblicz2(){
+         
+         a=document.getElementById("bok").value;
+         
+         objetosc=a*a*a;
+         document.getElementById("h").innerHTML="objętośc:"+objetosc;
+    }
+        
+
+        
+    
+    </script>
+</head>
+<body>
+    <form action="" id="k">
+    bok: <input type="number" id="bok">
+    </form>
+    
+            <div id="h"></div>
+        <button id="b" onclick="oblicz()">pole</button>
+        <button id="o" onclick="oblicz2()">objetosc</button>
+    
+        
+     
+      
+    
+
+</body>
+</html>

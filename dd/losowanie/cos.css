@@ -1,0 +1,45 @@
+p{
+    text-align: center;
+}
+button{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: aqua;
+    border-radius: 10px;
+    font-size: large;
+    height: 30px;
+    width: 100px;
+}
+h1{
+    text-align: center;
+}
+button:hover{
+    background-color: aquamarine;
+    font-size: larger;
+}
+body{
+    background-color: rgb(134, 245, 245);
+}
+div{
+    background-color: azure;
+    
+    width: 80px;
+    height: 20px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    0% {background-color: aqua;left: 0px;}
+    20% {background-color: aqua;left: 200px;}
+    30% {background-color: aqua;left: 400px;}
+    40% {background-color: aqua;left: 600px;}
+    50% {background-color: aqua;left: 800px;}
+    60% {background-color: aqua;right: 800px;}
+    70% {background-color: aqua;right: 600px;}
+    80% {background-color: aqua;right: 400px;}
+    90% {background-color: aqua;right: 200px;}
+    100% {background-color: aqua;right: 0px;}
+}

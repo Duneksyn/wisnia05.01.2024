@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function wieksza(){
+          
+          let c=parseFloat(document.getElementById("a").value)
+          let d=parseFloat(document.getElementById("b").value)
+          if (c>d) {
+            document.getElementById("h").innerHTML="wieksza liczba to:"+c;
+          }  else
+          {
+            document.getElementById("h").innerHTML="wieksza liczba to:"+d;
+          }
+        }
+          function mniejsza(){
+            
+            let c=parseFloat(document.getElementById("a").value)
+          let d=parseFloat(document.getElementById("b").value)
+          if (c<d) {
+            document.getElementById("h").innerHTML="wieksza liczba to:"+c;
+          }  else
+          {
+            document.getElementById("h").innerHTML="wieksza liczba to:"+d;
+          }
+        }
+        
+        function pierwiastek(){
+          let c=parseFloat(document.getElementById("a").value)
+          let d=parseFloat(document.getElementById("b").value)
+           
+            document.getElementById("h").innerHTML="pierwiastek kwadratowy z pierwszej liczby to:"+Math.sqrt(c);
+        }
+        function reset()
+        {
+          document.getElementById("f").reset();
+        }
+    </script>
+    <form action="" id="f">
+        Podaj liczne:<input type="number" id="a"><br>
+        podaj drugą l.:<input type="number" id="b">
+        <div id="h"></div>
+        <input type="button" value="wieksza" onclick="wieksza(this.form)">
+        <input type="button" value="mniejsza" onclick="mniejsza(this.form)">
+        <input type="button" value="pierwiastek" onclick="pierwiastek(this.form)">
+        <input type="button" value="reset" onclick="reset(this.form)">
+        </form>
+</body>
+</html>

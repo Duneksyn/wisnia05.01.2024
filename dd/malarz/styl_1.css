@@ -1,0 +1,47 @@
+header{
+    background-color: #829EB9;
+}
+footer{
+    background-color: #829EB9;
+    text-align: center;
+}
+main{
+    text-align: center;
+    
+    float: left;
+    background-color: #E0E9F1;
+    height: 400px;
+    width: 50%;
+    
+    padding-top: 100px;
+}
+aside{
+    float: left;
+    background-color: #B3C6D9;
+    height: 400px;
+    width: 25%;
+    padding-top: 100px;
+}
+h1{
+    text-align: center;
+}
+#prawy{
+    float: right;
+    
+}
+
+table{
+    margin: auto;
+   border-collapse: collapse; 
+  border-width: 1px;
+}
+td{
+    border-style: solid;
+    border-width: 1px; 
+    border-collapse: collapse;
+}
+table:hover{
+    background-color: black;
+    color: white;
+}
+
